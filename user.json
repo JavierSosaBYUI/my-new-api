@@ -1,0 +1,35 @@
+{
+    "user": {
+        "username": "javier",
+        "password": "abcdefg", 
+        "email": "sos17001@byuiedu",
+        "phoneNumber": "777-777-7777",
+        "currentLocation": "Salaberry-de-Valleyfield, QC", 
+        "openToNewOpportunities": true, 
+        "profileIsPublic": true,
+        "theme_name": "cool theme",
+        "profile": {
+            "experience": [
+                {
+                "jobTitle": "Database Administrator",
+                "jobDescription": "Administrator.",
+                "details": "Responsible",
+                "technologies": ["Oracle", "MySQL"]
+                },
+                {
+                "dateStart": "08-16-18",
+                "dateEnd": "",
+                "company": "Brigham Young university - Idaho",
+                "location": "Rexburg, Idaho"
+            
+                }
+                        ]
+            
+                    }
+
+
+            }
+
+}
+
+      
