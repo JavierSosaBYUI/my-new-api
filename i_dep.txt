@@ -14,3 +14,5 @@ npm install dotenv
 npm install mongodb
 npm install swagger-ui-express
 
+3. Uninstalling
+
