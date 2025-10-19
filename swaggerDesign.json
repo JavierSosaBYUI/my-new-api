@@ -1,5 +1,5 @@
 {
-  "swagger": "2.0",
+   "swagger": "2.0",
   "info": {
     "description": "This is an api server for a portfolio builder website.\n",
     "version": "1.0.0",
@@ -28,7 +28,7 @@
       "description": "These API endpoints are designed and will be created in the near future"
     }
   ],
-  "schemes": ["https"],
+  "schemes": ["http"],
   "paths": {
     "/theme/{themeName}": {
       "get": {
@@ -202,7 +202,7 @@
         }
       },
       "put": {
-        "tags": ["Not Yet Implemented"],
+        "tags": ["user"],
         "summary": "Updated user",
         "description": "This can only be done by the logged in user.",
         "operationId": "updateUser",
@@ -238,7 +238,7 @@
         }
       },
       "delete": {
-        "tags": ["Not Yet Implemented"],
+        "tags": ["user"],
         "summary": "Delete user",
         "description": "This can only be done by the logged in user.",
         "operationId": "deleteUser",

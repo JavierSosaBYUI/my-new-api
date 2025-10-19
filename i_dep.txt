@@ -13,6 +13,25 @@ npm install mongoose
 npm install dotenv
 npm install mongodb
 npm install swagger-ui-express
+npm install joi
+npm install joi-password-complexity
 
 3. Uninstalling
+
+
+ "swagger": "2.0",
+  "info": {
+    "description": "This is an api server for a portfolio builder website.\n",
+    "version": "1.0.0",
+    "title": "Portfolio Builder",
+    "contact": {
+      "email": "sos17001@byui.edu"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "my-new-api-udoo.onrender.com",
+
 
