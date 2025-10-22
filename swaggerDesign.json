@@ -12,7 +12,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "my-new-api-udoo.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "tags": [
     {
@@ -28,7 +28,7 @@
       "description": "These API endpoints are designed and will be created in the near future"
     }
   ],
-  "schemes": ["https"],
+  "schemes": ["http"],
   "paths": {
     "/theme/{themeName}": {
       "get": {

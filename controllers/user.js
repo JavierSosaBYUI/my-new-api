@@ -77,22 +77,20 @@ module.exports.updateUser = async (req, res) => {
       res.status(400).send({ message: passwordCheck.error });
       return;
     }
-    User.findOne({ username: username }, function (err, user) {
-      user.username = req.params.username;
-      user.password = req.body.password;
-      user.displayName = req.body.displayName;
-      user.info = req.body.info;
-      user.profile = req.body.profile;
-      user.save(function (err) {
-        if (err) {
-          res.status(500).json(err || 'Some error occurred while updating the contact.');
-        } else {
-          res.status(204).send();
-        }
-      });
-    });
+    const user = await User.findOne({ username: username });
+    if (!user) {
+      res.status(404).json({ message: 'User not found' });
+      return;
+    }
+    user.username = req.params.username;
+    user.password = req.body.password;
+    user.displayName = req.body.displayName;
+    user.info = req.body.info;
+    user.profile = req.body.profile;
+    await user.save();
+    res.status(204).send();
   } catch (err) {
-    res.status(500).json(err);
+    res.status(500).json({ message: err.message || 'Some error occurred while updating the user.' });
   }
 };
 
@@ -103,14 +101,15 @@ module.exports.deleteUser = async (req, res) => {
       res.status(400).send({ message: 'Invalid Username Supplied' });
       return;
     }
-    User.deleteOne({ username: username }, function (err, result) {
-      if (err) {
-        res.status(500).json(err || 'Some error occurred while deleting the contact.');
-      } else {
-        res.status(204).send(result);
-      }
-    });
+   
+    const result = await User.deleteOne({ username: username });
+   
+    if (result.deletedCount === 0) {
+      res.status(404).json({ message: 'User not found' });
+    } else {
+      res.status(204).send();
+    }
   } catch (err) {
-    res.status(500).json(err || 'Some error occurred while deleting the contact.');
+    res.status(500).json({ message: err.message || 'Some error occurred while deleting the user.' });
   }
 };

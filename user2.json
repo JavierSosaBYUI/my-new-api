@@ -1,27 +1,29 @@
 {
-        "username": "javier",
-        "password": "abcdefg", 
-        "email": "sos17001@byuiedu",
-        "phoneNumber": "777-777-7777",
-        "currentLocation": "Salaberry-de-Valleyfield, QC", 
-        "openToNewOpportunities": true, 
-        "profileIsPublic": true,
-        "theme_name": "cool theme",
-        "profile": {
-            "experience": [
-                {
-                "jobTitle": "Database Administrator",
-                "jobDescription": "Administrator.",
-                "details": "Responsible",
-                "technologies": ["Oracle", "MySQL"]
-                },
-                {
-                "dateStart": "08-16-18",
-                "dateEnd": "",
-                "company": "Brigham Young university - Idaho",
-                "location": "Rexburg, Idaho" 
-            }
-       ],
+  "username": "Mario",
+  "password": "@Venezia2026",
+  "displayName": "Mario Mezza",
+  "info": {
+    "email": "mario.mezza@gmail.com",
+    "phoneNumber": "777-777-7777",
+    "currentLocation": "Chicago, IL",
+    "openToNewOpportunities": true,
+    "profileIsPublic": true,
+    "theme_name": "Nike Theme"
+  },
+  "profile": {
+    "experience": [
+      {
+        "jobTitle": "Coiffure",
+        "jobDescription": "Haircuts",
+        "details": [
+          "Hairstyles"
+        ],
+        "dateStart": "10-20-2025",
+        "dateEnd": "10-21-2025",
+        "company": "Coiffure Valleyfield",
+        "location": "Valleyfield"
+      }
+    ],
     "education": [
       {
         "institution": "string",
@@ -66,5 +68,3 @@
     ]
   }
 }
-
-      
