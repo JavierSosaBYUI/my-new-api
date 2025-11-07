@@ -19,7 +19,7 @@ app.use(auth(config));
 
 const requiresAuth = (req, res, next) => {
   if (!req.oidc.isAuthenticated()) {
-    return res.status(401).send("Unauthorized");
+    return res.status(401).send("https://my-new-api-udoo.onrender.com/login");
   }
   next();
 }
